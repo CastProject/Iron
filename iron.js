@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /*
     iron.js - mainfile / executable (?) for the Iron package manager.
     Copyright (c) 2017 Isaac Trimble-Pederson
@@ -5,8 +6,6 @@
     This software is Free Software licensed under the MIT License; you are
     free to use it under those terms - please see LICENSE.
 */
-
-#!/usr/bin/env node
 
 // Get package.json for information
 let ironPackage = require('./package.json')
@@ -27,6 +26,10 @@ switch (args[0]) {
   }
   case undefined: {
     console.log('Cast: No arguments provided.')
+    break
+  }
+  case default: {
+    console.log('Cast: Invalid arguments provided: ' + args[0] + ' is not a valid command.')
     break
   }
 }
