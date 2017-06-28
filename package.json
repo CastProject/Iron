@@ -1,0 +1,31 @@
+{
+  "name": "discord-cast-iron",
+  "version": "0.0.1",
+  "description": "A Package Manager for Cast",
+  "main": "iron.js",
+  "bin": {
+    "iron": "./iron.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CastProject/Iron.git"
+  },
+  "author": "Isaac Trimble-Pederson <cyginnovations@gmail.com> (https://cyanisaac.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CastProject/Iron/issues"
+  },
+  "homepage": "https://github.com/CastProject/Iron#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^4.1.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
