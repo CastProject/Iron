@@ -14,6 +14,10 @@ let ironVersion = ironPackage.version
 // Get commandline args
 let process = require('process')
 let args = process.argv.slice(2)
+let workingDir = process.cwd()
+
+// Load libraries
+let IronfileLib = require('./lib/ironfile.js')
 
 switch (args[0]) {
   case 'info': {
@@ -24,12 +28,20 @@ switch (args[0]) {
     console.log('See Iron\'s repository: https://github.com/CastProject/Iron')
     break
   }
+  case 'test': {
+    console.log('Iron: Testing Ironfile.json...')
+    let ironfile = new IronfileLib.Ironfile(workingDir + '/Ironfile.json')
+    if (ironfile.validContents) {
+      console.log(ironfile.contents)
+    }
+    break
+  }
   case undefined: {
-    console.log('Cast: No arguments provided.')
+    console.log('Iron: No arguments provided.')
     break
   }
   default: {
-    console.log('Cast: Invalid arguments provided: ' + args[0] + ' is not a valid command.')
+    console.log('Iron: Invalid arguments provided: ' + args[0] + ' is not a valid command.')
     break
   }
 }
