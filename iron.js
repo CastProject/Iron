@@ -1,3 +1,11 @@
+/*
+    iron.js - mainfile / executable (?) for the Iron package manager.
+    Copyright (c) 2017 Isaac Trimble-Pederson
+
+    This software is Free Software licensed under the MIT License; you are
+    free to use it under those terms - please see LICENSE.
+*/
+
 #!/usr/bin/env node
 
 // Get package.json for information
