@@ -28,7 +28,7 @@ switch (args[0]) {
     console.log('Cast: No arguments provided.')
     break
   }
-  case default: {
+  default: {
     console.log('Cast: Invalid arguments provided: ' + args[0] + ' is not a valid command.')
     break
   }
