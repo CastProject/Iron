@@ -19,7 +19,9 @@
     "url": "https://github.com/CastProject/Iron/issues"
   },
   "homepage": "https://github.com/CastProject/Iron#readme",
-  "dependencies": {},
+  "dependencies": {
+    "github": "^9.2.0"
+  },
   "devDependencies": {
     "eslint": "^4.1.1",
     "eslint-config-standard": "^10.2.1",
